@@ -73,3 +73,33 @@ Modaal is a screen that overlays the app content to provide important info
 
 </Modal>
 
+# activity Indicator
+-displays a circular loading indicator
+-used to inform users about the status of ongoing processes , like submitting a form or saving update, or loading an app
+
+import {Vies, ActivityIndicator} from "react-native"
+
+export default function App () {
+    return (
+        <View style= {{flex:1, backgroundColor: "plum", padding: 60 }}>
+        <Activity Indicator />
+        <Activity Indicator size= "large" />
+        <Activity Indicator size= "large" color= "red" animating = {false} />
+
+        </View>
+    )
+}
+
+# alert
+launches an alert dialog with specified title and message
+
+import {View, Button, Alert } from "react-native"
+
+export default function App () {
+    return (
+        <View style= {{flex:1, backgroundColor: "plum", padding: 60 }}>
+        <Button title = "Alert" onPress={() => Alert.alert(" invalid data")} />
+        
+        </View>
+    )
+}
