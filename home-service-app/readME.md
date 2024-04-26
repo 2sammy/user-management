@@ -103,3 +103,28 @@ export default function App () {
         </View>
     )
 }
+
+# style RN
+
+import {View, Text, StyleSheet} from "react-native";
+
+export default function App() {
+    return (
+        <View style = {styles.container}>
+        <Text> hello manoah</Text>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create ( {
+    container: {
+        flex: 1, 
+        backgroundColor: blue,
+        paddingHorizontol: 10,
+        paddingVertical: 10,
+        marginVertical: 10,
+        borderWidth:2,
+        borderColor:purple
+    }
+})
+
