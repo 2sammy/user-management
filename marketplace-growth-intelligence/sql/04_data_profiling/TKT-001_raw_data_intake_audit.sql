@@ -313,6 +313,7 @@ SELECT
             THEN 'FAIL: ROW COUNT MISMATCH'
 
         WHEN a.source_file_count <> 1
+        
             THEN 'FAIL: MULTIPLE SOURCE FILES'
 
         WHEN a.missing_source_file_rows > 0
